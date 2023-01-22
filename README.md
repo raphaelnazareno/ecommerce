@@ -3,13 +3,12 @@
 Projeto de treinamento Angular
 
 
-Dicas para clonar o projeto
+Dicas para clonar e rodar o projeto
 ------------------------------------------------------------------------
 git init <br>
-git add . <br>
-git commit -m "Add existing project files to Git" <br>
 git remote add origin https://github.com/raphaelnazareno/ecommerce.git <br>
-git pull <br>
+npm i <br>
+ng s <br>
 
 Comandos uteis
 ------------------------------------------------------------------------
