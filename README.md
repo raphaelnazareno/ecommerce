@@ -7,6 +7,7 @@ Dicas para clonar e rodar o projeto
 ------------------------------------------------------------------------
 git init <br>
 git remote add origin https://github.com/raphaelnazareno/ecommerce.git <br>
+git push --set-upstream origin master
 npm i <br>
 ng s <br>
 
