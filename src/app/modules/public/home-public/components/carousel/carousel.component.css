@@ -1,18 +1,49 @@
 .slick-slider {
   width: 88%;
+  
   margin: auto;
-  /* background: rgb(14, 13, 13); */
+  background: #012DB2;
+  
 }
 
 .slick-prev,
 .slick-next {
   height: 20px;
-  width: 20px;
-  background-color: red !important;
-  background: red !important;
+  width: 2px;
+  background-color: #f0213f !important;
+  background: #f0213f !important;
   z-index: 100;
 }
 
+.slide{
+  margin: 0.4rem -15rem 0.9rem 0.2rem;
+  height: auto;
+  
+}
+
+.slide > img {
+    border: none;
+    border-radius: 50% 50%;
+    background-color: #f0213f;
+    transition: 0.2s;
+    padding-right: 1px;
+    
+   
+}
+
+.tipos {
+  color: white;
+  text-decoration:none;
+  margin-left: 15px;
+
+  
+  
+}
+
+.tipos:hover {
+  text-decoration: underline;
+  
+}
 /* .slick-prev, .slick-next {
   position: absolute;
   display: block;
