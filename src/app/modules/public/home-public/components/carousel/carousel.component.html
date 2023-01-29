@@ -6,13 +6,11 @@
   (afterChange)="afterChange($event)"
   (beforeChange)="beforeChange($event)">
 <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-<img src="{{ slide.img }}" alt="" > 
+<img src="{{ slide.img }}" alt=""> 
     <a href="" class="tipos">{{slide.ok}}</a>
 </div>
 
 </ngx-slick-carousel>
-
-<button type="button" class="slick-prev slick-arrow" style="display: block;" aria-label="Slide Anterior (2 de 3 páginas)">Slide Anterior</button>
 
 <button (click)="addSlide()">Add</button>
 <button (click)="removeSlide()">Remove</button>

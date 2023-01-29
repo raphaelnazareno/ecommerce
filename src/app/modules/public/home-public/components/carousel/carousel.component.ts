@@ -31,7 +31,7 @@ export class CarouselComponent implements OnInit {
 
 
 
-  slideConfig = { slidesToShow: 3, slidesToScroll: 9, arrows: true };
+  slideConfig = { slidesToShow: 9, slidesToScroll: 9, arrows: true };
 
   addSlide() {
     this.slides.push({ img: 'https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2023/01-jan/27/10.png', ok:"Áudio e instrumentos" });
