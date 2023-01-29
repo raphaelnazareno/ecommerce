@@ -88,8 +88,8 @@ export class CarouselComponent implements OnInit {
   ];
 
   slideConfig = {
-    slidesToShow: 6,
-    slidesToScroll: 4,
+    slidesToShow: 9,
+    slidesToScroll: 9,
     arrows: true,
     infinite: true,
   };

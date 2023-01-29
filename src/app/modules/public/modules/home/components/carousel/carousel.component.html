@@ -1,3 +1,5 @@
+
+<div class="teste">
 <ngx-slick-carousel
   class="carousel"
   #slickModal="slick-carousel"
@@ -7,8 +9,11 @@
   (afterChange)="afterChange($event)"
   (beforeChange)="beforeChange($event)"
 >
+
   <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-    <img (click)="elemento(slide)" src="{{ slide.img }}" alt="{{slide.descricao}}" width="100%" />
-    <p>{{slide?.descricao}}</p>
+    <img (click)="elemento(slide)" src="{{ slide.img }}" alt="{{slide.descricao}}">
+    <a href="" class="tipos">{{slide?.descricao}}</a>
   </div>
+
 </ngx-slick-carousel>
+</div>
