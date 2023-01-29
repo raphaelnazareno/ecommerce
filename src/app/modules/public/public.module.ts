@@ -1,25 +1,16 @@
-import { CarouselComponent } from './home-public/components/carousel/carousel.component';
+import { ContainerComponent } from './container/container.component';
+import { SearchbarComponent } from './container/components/searchbar/searchbar.component';
+import { MenuComponent } from './container/components/menu/menu.component';
+import { InformationComponent } from './container/components/information/information.component';
+import { HeaderComponent } from './container/components/header/header.component';
+import { BaseboardComponent } from './container/components/baseboard/baseboard.component';
 import { PublicRoutingModule } from './public-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomePublicComponent } from './home-public/home-public.component';
-import { HeaderComponent } from './home-public/components/header/header.component';
-import { MenuComponent } from './home-public/components/menu/menu.component';
-import { BaseboardComponent } from './home-public/components/baseboard/baseboard.component';
-import { InformationComponent } from './home-public/components/information/information.component';
-import { SearchbarComponent } from './home-public/components/searchbar/searchbar.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
-  declarations: [
-    HomePublicComponent,
-    HeaderComponent,
-    BaseboardComponent,
-    InformationComponent,
-    MenuComponent,
-    SearchbarComponent,
-    CarouselComponent,
-  ],
-  imports: [CommonModule, PublicRoutingModule, SlickCarouselModule],
+  declarations: [ContainerComponent, BaseboardComponent, HeaderComponent, InformationComponent, MenuComponent, SearchbarComponent],
+  imports: [CommonModule, PublicRoutingModule],
 })
 export class PublicModule {}
