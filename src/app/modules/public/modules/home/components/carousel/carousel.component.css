@@ -20,12 +20,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 
 
 }
 
-.slide>img {
+.slide:hover {
+  text-decoration: underline;
+}
 
+
+.slide>img {
   border-radius: 50% 50%;
   background-color: #f0213f;
   transition: 0.2s;
@@ -33,8 +38,7 @@
 
 }
 
-.slide>img:hover {
-
+.slide:hover img {
   border: solid 2px #FFD700;
   transform: rotate(-20deg);
 
@@ -47,11 +51,22 @@
   display: block;
   justify-content: center;
   text-align: center;
-  padding-top: 15px;
-}
+  margin-top: 5px;
 
-.tipos:hover {
-  text-decoration: underline;
 }
 
 
+.slideshow-container {
+  width:100%;
+  height:100%;
+  top: 100px;
+  flex-direction:row;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  display: flex;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+
+}

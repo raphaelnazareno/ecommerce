@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
+
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -92,16 +96,30 @@ export class CarouselComponent implements OnInit {
     slidesToScroll: 9,
     arrows: true,
     infinite: true,
-  };
+    timings:"200ms ease-in",
+    autoplay: true,
+    interval:"4000"
+
+  }
 
   elemento(evento: any) {
     console.log(evento);
   }
 
-  constructor() {}
 
-  ngOnInit(): void {}
 
+
+  constructor() {
+
+  }
+
+
+
+
+  ngOnInit(): void { }
+
+
+  
 
   slickInit(e: any) {
     console.log('slick initialized');
@@ -118,4 +136,8 @@ export class CarouselComponent implements OnInit {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
-}
+
+
+
+};
+
